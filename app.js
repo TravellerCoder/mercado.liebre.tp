@@ -27,3 +27,5 @@ app.get('/registro', (req, res) => {
 app.get('/ingreso', (req, res) => {
     res.sendFile(path.resolve('views/login.html'));
 });
+const port = process.env.PORT || 1126;
+app.listen(port, () => console.log('Servidor corriendo en el puerto ' + port));
