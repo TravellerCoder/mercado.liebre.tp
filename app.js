@@ -10,11 +10,8 @@ app.use(express.urlencoded());
 
 app.use(express.static(nuevaCarpetaPath)) 
 
-const appPuerto = 1126;
-
-app.listen(appPuerto, () => {
-    console.log('servidor funcionando en puerto' + appPuerto)
-   });
+const port = process.env.PORT || 1126;
+app.listen(port, () => console.log('Servidor corriendo en el puerto ' + port));
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('views/home.html'))
@@ -27,5 +24,4 @@ app.get('/registro', (req, res) => {
 app.get('/ingreso', (req, res) => {
     res.sendFile(path.resolve('views/login.html'));
 });
-const port = process.env.PORT || 1126;
-app.listen(port, () => console.log('Servidor corriendo en el puerto ' + port));
+
