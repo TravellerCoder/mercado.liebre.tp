@@ -99,6 +99,12 @@ main{
 .banner{
     width: 100%;
 }
+.login{
+    background-color: #ebebeb;
+}
+.registro{
+    background-color: #ebebeb;
+}
 
 main section{
     
