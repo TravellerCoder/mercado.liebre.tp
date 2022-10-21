@@ -125,8 +125,9 @@ main h2{
     margin-top:1vw #ebebeb;
     background-color: #fff;    
     margin: 10px 0px;
-    box-shadow: 0px 0px 10px rgb(100,100,100);
+    box-shadow: 0px 0px 5px rgb(100,100,100);
 }
+
 
 .articulo img{
     width: 100%;
@@ -171,6 +172,14 @@ main h2{
 .logo-envio i{
     color:#39b54a;
     padding-top: 6px; 
+    transition:all 0.25 ;
+    
+
+}
+.logo-envio i:hover{
+    cursor: pointer;
+    transform: rotate(90deg);
+    
 }
 
 .precio{
@@ -178,6 +187,7 @@ main h2{
     font-size: 18px;
     color:#666;
     width: 30%;
+    text-align: left;
 }
 
 .descuento{
@@ -185,18 +195,24 @@ main h2{
     font-size: 16px;
     color: #39b54a;
     width: 70%;
+    text-align: right;
 }
 
 .descripcion{
     font-family: roboto, sans-serif;
     font-size: 16px;
     color:#666;
+    cursor: pointer;
+
 }
 
 .precio-y-descuento{
     display:flex;
     align-items: center;
     margin: 5px;
+    flex-direction: row;
+    justify-content:space-between ;
+    
 }
 
 footer{
@@ -216,11 +232,17 @@ footer section p{
     font-family: Roboto, sans-serif;
     font-size: 12px;
 }
+footer section i:hover{
+    cursor: pointer;
+    background: white;
+    color:#39b54a;
 
+}
 footer section i{
     margin-bottom: 10px;
     font-size: 2em;
     color:#1259C3;
+    transition: all 0.45;
 }
 
 footer section span{
@@ -303,7 +325,7 @@ footer section span{
 }
 
 @media screen and (min-width: 361px) {
-   
+
    
     .nav-bar{
         display: none;
@@ -329,6 +351,7 @@ footer section span{
     .formRegistro{
         width: 65%;
     }
+
 }
 
 @media screen and (min-width: 769px) {
@@ -382,7 +405,7 @@ footer section span{
         flex-wrap: nowrap;
     }   
     .articulo{
-        width: 25%;
+        width: 20%;
         margin: 3px;
     }
     .elementos{
@@ -391,13 +414,10 @@ footer section span{
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    footer i:hover{
-        color: #1259C3;
-        background: #1259C3;
-        transition: #666, color 0.45s;
-
-    }
     .formRegistro{
         width: 50%;
     }
-}    
+
+}
+   
+   
