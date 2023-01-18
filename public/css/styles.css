@@ -252,6 +252,8 @@ footer section span{
     margin-top: 10px;
 }
 
+
+
 .conteinterSections{
     margin: auto;
 }
@@ -266,7 +268,7 @@ footer section span{
     display: block;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: rgb(66, 66, 66);
+    color:  rgb(66,66,66);
     font-weight: bold;
     font-size: 16px;
 }

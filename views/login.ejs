@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('partials/head') %> 
+</head>
+<body>
+    <header class="header">
+        <%- include ('partials/header') %> 
+    </header>
+    <main class="login">
+        <h3 class="titulo">Ingresá a tu Cuenta</h3>
+        <form method="post" action="/" class="formRegistro">
+            <div>
+                <label class="labelForm" for="userNameLog">Nombre de usuario</label>
+                <input type="text" class="inputRegistro" name="userNameLog" id="userNameLog" placeholder="Ingresa tu Nombre de usuario">
+            </div>
+            <div>
+                <label class="labelForm" for="passwordLog">Contraseña</label>
+                <input type="password" class="inputRegistro" name="passwordLog" id="passwordLog" placeholder="Ingresa tu contraseña">
+            </div>
+            <div class="buttonContainer">
+                <button type="submit">Ingresá</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <%- include('partials/footer')  %> 
+    </footer>
+</body>

@@ -1,7 +1,7 @@
 const path = require('path');
 
 const renderRegister = (req, res) => {
-    return  res.sendFile(path.resolve('views/register.html'))
+    return  res.render(path.resolve(__dirname, '..', 'views','register'))
 };
 
 module.exports = {renderRegister};
