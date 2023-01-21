@@ -1,0 +1,12 @@
+[
+    {
+        "fullname": "Bart Simpson",
+        "userName" : "el Barto",
+        "birthDate": "12/12/1988",
+        "adress": "Siempre viva 742",
+        "userType": "Comprador",
+
+        "password" : "123456"
+
+    }
+]
