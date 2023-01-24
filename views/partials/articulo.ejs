@@ -1,0 +1,44 @@
+<% regularProducts.forEach(regularProoduct => { %>
+    <article class="articulo">
+        <a href="/products/<%= regularProduct.id %"> 
+            <img src="/images/products/<%= regularProduct.img %>">
+                <div class="caja-articulo">
+                    <div class="logo-envio">
+                        <i class="fa-sharp fa-solid fa-truck"></i>
+                    </div> 
+                    <div class="precio-y-descuento">
+                        <span class="precio"> <%= regularProduct.price% ></span><br>
+                        <span class="descuento"><%= regularProduct.discount %></span></div>
+                    <div class="descripcion"><%= regularProduct.description %></div>
+                </div>
+    </article>
+<% }) %>
+
+
+
+
+
+<% regularProducts.forEach(regularProduct => { %>
+    <a href="./data/productsDataBase.json/<%=regularProduct.id%>"> 
+        <article class="articulo">
+            <img src="./images/products/<%=regularProduct.img%>">
+                <div class="caja-articulo">
+                    <div class="logo-envio">
+                        <i class="fa-sharp fa-solid fa-truck"></i>
+                    </div> 
+                    <div class="precio-y-descuento">
+                        <span class="precio"> <%=regularProduct.price%></span><br>
+                        <span class="descuento"><%=regularProduct.discount%></span></div>
+                    <div class="descripcion"><%=regularProduct.description%></div>
+                </div>
+        </article>
+    </a>
+<% }) %>
+
+
+
+
+<div>
+                <label for="birthDate" class="labelForm">Fecha de Nacimiento</label>
+                <input type="date" class="inputRegistro" name="birthDate" id="birthDate">
+            </div>

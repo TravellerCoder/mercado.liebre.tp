@@ -1,12 +1,46 @@
 [
-    {
-        "fullname": "Bart Simpson",
-        "userName" : "el Barto",
-        "birthDate": "12/12/1988",
-        "adress": "Siempre viva 742",
-        "userType": "Comprador",
-
-        "password" : "123456"
-
-    }
+  {
+    "fullName": "guillermo bukowski",
+    "userName": "guillote",
+    "birthDate": "1992-01-26",
+    "adress": "el mundo nuestra casa",
+    "userType": "Vendedor",
+    "interes": "electro",
+    "img": "",
+    "password": "123456",
+    "confirmPass": "123456"
+  },
+  {
+    "fullName": "malena maver",
+    "userName": "male",
+    "birthDate": "1989-11-04",
+    "adress": "el mundo nuestra casa",
+    "userType": "comprador",
+    "interes": "electro",
+    "img": "",
+    "password": "123456",
+    "confirmPass": "123456"
+  },
+  {
+    "fullName": "aaaa",
+    "userName": "",
+    "birthDate": "",
+    "adress": "",
+    "img": "",
+    "password": "",
+    "confirmPass": "",
+    "id": 2
+  },
+  {
+    "fullName": "aaa",
+    "userName": "aaaaa",
+    "birthDate": "1111-11-11",
+    "adress": "aaa",
+    "userType": "comprador",
+    "interes": "electro",
+    "img": "",
+    "password": "122456",
+    "confirmPass": "123456",
+    "id": 4
+  }
 ]

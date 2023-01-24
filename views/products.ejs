@@ -8,125 +8,37 @@
     <%- include('partials/header')  %>    
     
     </header>
-
     <main class="main">
         <img class="banner" src="/images/img-home-banner.jpg" alt="Banner ML">
-        <section>
-            <h2>Lo viste ayer? Compralo hoy!!</h2>
-                <div class="productos"> 
-                <article class="articulo">
-                    <img src="/images/img-cafetera-moulinex.jpg">
-                <div class="caja-articulo">
-                            <div class="logo-envio">
-                                <i class="fa-sharp fa-solid fa-truck"></i>
-                            </div> 
-                            <div class="precio-y-descuento">
-                                <span class="precio">$6770</span><br>
-                                <span class="descuento">40% Off</span></div>
-                            <div class="descripcion">Cafetera Moulinex</div>
-                </div>
+            <section>
+                <h2>Productos</h2>
+                <% regularProducts.forEach(regularProduct => { %>
+                    <a href="./data/productsDataBase.json/<%=regularProduct.id%>"> 
+                        <article class="articulo">
+                            <img src="./images/products/<%=regularProduct.img%>">
+                                <div class="caja-articulo">
+                                    <div class="logo-envio">
+                                        <i class="fa-sharp fa-solid fa-truck"></i>
+                                    </div> 
+                                    <div class="precio-y-descuento">
+                                        <span class="precio"> <%=regularProduct.price%></span><br>
+                                        <span class="descuento"><%=regularProduct.discount%></span></div>
+                                    <div class="descripcion"><%=regularProduct.description%></div>
+                                </div>
+                        </article>
+                    </a>
+                <% }) %>
                 
-                </article>
+
+
+            </section>
+            <section>
+                <h2>Ofertas</h2>
                 
-                <article class="articulo">
-                    <img src="/images/img-macbook-pro-2019.jpg">
-                    <div class="caja-articulo">
-                        <div class="logo-envio">
-                            <i class="fa-sharp fa-solid fa-truck"></i>
-                        </div> 
-                            <div class="precio-y-descuento">
-                                <span class="precio">$230.000</span><br>
-                                <span class="descuento">20% Off</span></div>
-                            <div class="descripcion">MacBook Pro 2019</div>
-                    </div>
-                
-                </article>
-            
-                <article class="articulo">
-                    <img src="/images/img-samsung-galaxy-s10.jpg">
-                    <div class="caja-articulo">
-                            <div class="logo-envio">
-                                <i class="fa-sharp fa-solid fa-truck"></i>
-                            </div> 
-                            <div class="precio-y-descuento">
-                                <span class="precio">$7500</span><br>
-                                <span class="descuento">40% Off</span></div>
-                            <div class="descripcion">Cafetera Moulinex</div>
-                    </div> 
-                </article>
-            
-                <article class="articulo">
-                    <img src="/images/img-tv-samsung-smart.jpg">
-                    <div class="caja-articulo">
-                        <div class="logo-envio">
-                            <i class="fa-sharp fa-solid fa-truck"></i>
-                        </div> 
-                        <div class="precio-y-descuento">
-                            <span class="precio">$23200</span><br>
-                            <span class="descuento">5% Off</span></div>
-                        <div class="descripcion">SmartTV Samsung 43" </div>
-                    </div>
-                
-                </article>
-            </div>  
-        </section>
-        <section>
-            <h2>Ofertas</h2>
-            <div class="productos"> 
-                <article class="articulo">
-                <img src="/images/img-cafetera-moulinex.jpg">
-                <div class="caja-articulo">
-                        <div class="logo-envio">
-                            <i class="fa-sharp fa-solid fa-truck"></i>
-                        </div>
-                        <div class="precio-y-descuento"> 
-                            <span class="precio">$6770</span><br>
-                            <span class="descuento">40% Off</span></div>
-                        <div class="descripcion">Cafetera Moulinex</div>
-                </div>
-                </article>
-                <article class="articulo">
-                <img src="/images/img-macbook-pro-2019.jpg">
-                <div class="caja-articulo">
-                        <div class="logo-envio">
-                            <i class="fa-sharp fa-solid fa-truck"></i>
-                        </div> 
-                        <div class="precio-y-descuento">
-                            <span class="precio">$230.000</span><br>
-                            <span class="descuento">20% Off</span></div>
-                        <div class="descripcion">MacBook Pro 2019</div>
-                </div>
-                </article>
-            <article class="articulo">
-                <img src="/images/img-samsung-galaxy-s10.jpg">
-                <div class="caja-articulo">
-                          <div class="logo-envio">
-                          <i class="fa-sharp fa-solid fa-truck"></i>
-                          </div>
-                          <div class="precio-y-descuento"> 
-                            <span class="precio">$7500</span><br>
-                            <span class="descuento">40% Off</span></div>
-                        <div class="descripcion">Cafetera Moulinex</div>
-                </div>
-                
-              </article>
-        
-              <article class="articulo">
-                <img src="/images/img-tv-samsung-smart.jpg">
-                <div class="caja-articulo">
-                        <div class="logo-envio">
-                          <i class="fa-sharp fa-solid fa-truck"></i>
-                        </div>
-                        <div class="precio-y-descuento"> 
-                            <span class="precio">$23200</span><br>
-                            <span class="descuento">5% Off</span></div>
-                        <div class="descripcion">SmartTV Samsung 43"</div>
-                </div>
-                
-              </article>
-            </div>  
-      </section>
-    </main>
+      </main>
+
+
+    
     <footer class="footer">
       <div class="elementos">
         <section>
